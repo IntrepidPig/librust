@@ -4,8 +4,9 @@ use crate::prelude::*;
 
 pub mod fs;
 pub mod io;
+pub mod fmt;
 pub(crate) mod prelude {
-	pub use crate::{fs::*, io::*, syscall::*, *};
+	pub use crate::{fs::*, io::*, syscall::*, fmt::*, *};
 }
 
 mod syscall;
